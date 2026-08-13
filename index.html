@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Vios Growth Academy | Restoring Dignity Through Kintsugi</title>
+    <meta name="description" content="Vios Growth Academy is dedicated to restoring the dignity of those abandoned, homeless, and rejected by systems through radical transparency and sustainable growth." />
+    <meta name="keywords" content="Vios Growth Academy, Kintsugi, social impact, homeless support, women empowerment, children foundation, sustainable growth" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://viosgrowthacademy.com/" />
+    <meta property="og:title" content="Vios Growth Academy | Restoring Dignity Through Kintsugi" />
+    <meta property="og:description" content="Restoring the dignity of those abandoned, homeless, and rejected by systems through radical transparency." />
+    <meta property="og:image" content="https://viosgrowthacademy.com/og-image.jpg" />
+
+    <link rel="canonical" href="https://viosgrowthacademy.com/" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://viosgrowthacademy.com/" />
+    <meta property="twitter:title" content="Vios Growth Academy | Restoring Dignity Through Kintsugi" />
+    <meta property="twitter:description" content="Restoring the dignity of those abandoned, homeless, and rejected by systems through radical transparency." />
+    
+    <link rel="icon" type="image/jpeg" href="./VIOS_LOGO.jpeg" />
+    <style>
+  :root {
+    --font-serif: "Playfair Display", "Georgia", serif;
+    --font-sans: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segou UI Emoji", "Segoe UI Symbol";
+  }
+  
+  h1, h2, h3, h4, h5, h6, blockquote, .prose h1, .prose h2, .prose h3, .prose h3, .prose h4 {
+    font-family: var(--font-serif);
+  }
+  
+  body, input, textarea, button, select, .prose p, .prose li, .prose span, .prose a, .prose strong, .prose em, .figcaption,
+  .text-xs, .text-sm, .text-md, .text-lg {
+    font-family: var(--font-sans);
+  }
+  
+  .serif { font-family: var(--font-serif) !important; }
+  .sans { font-family: var(--font-sans) !important; }
+</style>
+<script>document.documentElement.classList.add('js');</script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Vios Growth Academy",
+      "url": "https://viosgrowthacademy.com/",
+      "logo": "https://viosgrowthacademy.com/logo.png",
+      "description": "Vios Growth Academy is dedicated to restoring the dignity of those abandoned, homeless, and rejected by systems through radical transparency and sustainable growth.",
+      "founder": {
+        "@type": "Person",
+        "name": "Nakungu Violet Lovisa",
+        "alternateName": "Coach Vio"
+  },
+      "foundingDate": "2012",
+      "sameAs": [
+        "https://www.instagram.com/viosgrowthacademy",
+        "https://twitter.com/viosgrowth"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Social Support and Empowerment",
+      "provider": {
+        "@type": "Organization",
+        "name": "Vios Growth Academy"
+      },
+      "areaServed": "Global",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Vios Growth Academy Programs",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Vios Children Foundation",
+              "description": "Nurturing future leaders in a safe haven where childhood is protected and potential is nurtured through holistic education."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Empowering Men and Boys",
+              "description": "Cultivating responsible leadership and emotional intelligence to break cycles of toxic masculinity."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fearless Women of Worth",
+              "description": "Vocational training and legal literacy to empower women to claim their agency and lead with confidence."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Financial Guidance",
+              "description": "Ending aid dependency through micro-entrepreneurship training and sustainable growth mentorship."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Splash Screen / Loader -->
+    <style>
+      #vios-splash {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f4efe6; /* Match logo background (sage-soft) */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.6s;
+        overflow: hidden;
+      }
+
+      #vios-splash.fade-out {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .loader-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loader-ring {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 61, 43, 0.08); /* emerald-deep light opacity */
+        border-top: 2.5px solid #003d2b; /* emerald-deep accent */
+        animation: loader-spin 1.5s linear infinite;
+      }
+
+      @keyframes loader-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      .loader-logo-img {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+        z-index: 2;
+        /* Subtle pulse effect */
+        animation: loader-pulse 2.2s ease-in-out infinite;
+      }
+
+      @keyframes loader-pulse {
+        0%, 100% { transform: scale(1); opacity: 0.95; }
+        50% { transform: scale(1.04); opacity: 1; }
+      }
+
+      .loader-text {
+        margin-top: 40px;
+        color: #003d2b; /* emerald-deep */
+        font-family: 'Poppins', 'Arial', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        opacity: 0.85;
+        font-weight: 600;
+      }
+      
+      /* Hide root content while splash is visible to prevent flash, only if JS is enabled */
+      .js #root:not(.ready) {
+        display: none;
+      }
+    </style>
+
+    <div id="vios-splash">
+      <div class="loader-content">
+        <div class="loader-ring"></div>
+        <img src="./VIOS_LOGO.jpeg" alt="Vios Growth Academy Logo" class="loader-logo-img">
+      </div>
+      <div class="loader-text">Restoring Dignity</div>
+    </div>
+
+    <div id="root">
+      <!-- This content is visible to crawlers and NotebookLM before React loads -->
+      <div style="font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; color: #003d2b; line-height: 1.6;">
+        <header style="text-align: center; margin-bottom: 40px;">
+          <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Vios Growth Academy</h1>
+          <p style="font-size: 1.2rem; font-style: italic;">Restoring Dignity Through Kintsugi</p>
+        </header>
+        
+        <section style="margin-bottom: 30px;">
+          <h2>Our Mission</h2>
+          <p>Vios Growth Academy is dedicated to restoring the dignity of those abandoned, homeless, and rejected by systems. We believe that like Kintsugi—the Japanese art of repairing broken pottery with gold—our scars and past struggles can be transformed into sources of unique strength and beauty.</p>
+        </section>
+
+        <section style="margin-bottom: 30px;">
+          <h2>Our Impact</h2>
+          <ul>
+            <li><strong>Abandoned & Homeless:</strong> Providing immediate shelter and a sense of belonging.</li>
+            <li><strong>Rejected by Systems:</strong> Legal advocacy and structural support for the marginalized.</li>
+            <li><strong>Unable to School:</strong> Restoring the right to education through scholarships.</li>
+          </ul>
+        </section>
+
+        <section style="margin-bottom: 30px;">
+          <h2>Our Story: The Kintsugi Journey</h2>
+          <p>Founded in 2012, Vios Growth Academy was born from a simple observation: that the world often throws away what is broken, failing to see the masterpiece hidden within the shards.</p>
+          <p>Our foundation is built on the Japanese art of <strong>Kintsugi</strong>—the practice of repairing broken pottery with gold. At Vios, we apply this to human lives. We don't see "broken" people; we see masters-in-the-making whose scars are the very places where the gold of dignity will settle.</p>
+          <p>Over the last 12 years, we have transformed over 5,000 lives, evolving from a small initiative into a multi-sector academy dedicated to protecting children, empowering men and boys, uplifting women, and providing financial guidance for sustainable independence.</p>
+        </section>
+
+        <section style="margin-bottom: 30px;">
+          <h2>Core Sectors</h2>
+          <ul>
+            <li><strong>Vios Children Foundation:</strong> Nurturing future leaders in a safe haven where childhood is protected and potential is nurtured through holistic education.</li>
+            <li><strong>Empowering Men and Boys:</strong> Cultivating responsible leadership and emotional intelligence to break cycles of toxic masculinity.</li>
+            <li><strong>Fearless Women of Worth:</strong> Vocational training and legal literacy to empower women to claim their agency and lead with confidence.</li>
+            <li><strong>Financial Guidance:</strong> Ending aid dependency through micro-entrepreneurship training and sustainable growth mentorship.</li>
+          </ul>
+        </section>
+
+        <footer style="text-align: center; margin-top: 50px; opacity: 0.7;">
+          <p>Loading the full interactive experience...</p>
+        </footer>
+      </div>
+    </div>
+    <noscript>
+      <div style="padding: 20px; text-align: center; background: #f8d7da; color: #721c24;">
+        For the full interactive experience, please enable JavaScript in your browser.
+      </div>
+    </noscript>
+    <script>
+      // Emergency error logger
+      function hideSplash() {
+        var splash = document.getElementById('vios-splash');
+        var root = document.getElementById('root');
+        if (splash) splash.classList.add('fade-out');
+        if (root) root.classList.add('ready');
+      }
+
+      window.onerror = function(msg, url, lineNo, columnNo, error) {
+        hideSplash();
+        var root = document.getElementById('root');
+        if (root) {
+          root.innerHTML = '<div style="color:#721c24; background:#f8d7da; border:1px solid #f5c6cb; padding:20px; margin:20px; font-family:sans-serif; border-radius:8px; text-align:left;">' +
+            '<h2 style="margin-top:0">Website Startup Error</h2>' +
+            '<p><strong>Message:</strong> ' + msg + '</p>' +
+            '<p><strong>File:</strong> ' + url + ' (Line: ' + lineNo + ')</p>' +
+            '<p style="font-size:0.8rem; opacity:0.8;">Please send this error to your developer.</p>' +
+            '</div>';
+        }
+        return false;
+      };
+
+      // Detect if the main script fails to load (404)
+      window.__criticalScriptFailed = false;
+      window.addEventListener('error', function(e) {
+        if (e.target && e.target.tagName === 'SCRIPT' && e.target.src && e.target.src.includes('assets/index-')) {
+          window.__criticalScriptFailed = true;
+          hideSplash();
+          var root = document.getElementById('root');
+          if (root) {
+            root.innerHTML = '<div style="color:#721c24; background:#f8d7da; border:1px solid #f5c6cb; padding:20px; margin:20px; font-family:sans-serif; border-radius:8px; text-align:left;">' +
+              '<h2 style="margin-top:0">Critical File Missing</h2>' +
+              '<p>The browser could not find the website files (404 Error).</p>' +
+              '<p><strong>Missing File:</strong> ' + e.target.src + '</p>' +
+              '<p style="font-size:0.8rem; opacity:0.8;">Make sure the "assets" folder is uploaded correctly and the site is published from the build output.</p>' +
+              '</div>';
+          }
+        }
+      }, true);
+    </script>
+    <script type="module" src="src/main.tsx"></script>
+  </body>
+</html>
+

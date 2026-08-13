@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Geist Mono", monospace;
+  --font-sans: "Geist Mono", monospace;
+
+  --color-emerald-deep: #003d2b;
+  --color-sage-soft: #f4efe6;
+  --color-gold-burnished: #c5a059;
+  --color-gold-light: #eddcb9;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-sage-soft text-emerald-deep font-sans antialiased;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold tracking-tight;
+  }
+}
+
+.kintsugi-line {
+  background: linear-gradient(90deg, transparent, var(--color-gold-burnished), transparent);
+  height: 1px;
+  width: 100%;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
