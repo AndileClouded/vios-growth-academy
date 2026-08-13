@@ -1,0 +1,119 @@
+{
+  "entities": {
+    "consultationRequest": {
+      "title": "Consultation Request",
+      "description": "A request for a free 30-minute consultation from a potential client.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the person requesting the consultation."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The email address of the person requesting the consultation."
+        },
+        "message": {
+          "type": "string",
+          "description": "The goals or message provided by the person."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the request was created."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "contacted", "completed"],
+          "description": "The current status of the request."
+        }
+      },
+      "required": ["name", "email", "message", "createdAt"]
+    },
+    "directInquiry": {
+      "title": "Direct Inquiry",
+      "description": "A general inquiry from the website footer.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the person inquiring."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The email address of the person inquiring."
+        },
+        "message": {
+          "type": "string",
+          "description": "The message provided by the person."
+        },
+        "subject": {
+          "type": "string",
+          "description": "The subject of the inquiry."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the inquiry was created."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "contacted", "completed"],
+          "description": "The current status of the inquiry."
+        }
+      },
+      "required": ["name", "email", "message", "createdAt"]
+    },
+    "partnershipInquiry": {
+      "title": "Partnership Inquiry",
+      "description": "An inquiry for institutional or strategic partnerships.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the representative."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The email address of the representative."
+        },
+        "organization": {
+          "type": "string",
+          "description": "The organization or institution name."
+        },
+        "message": {
+          "type": "string",
+          "description": "The proposal or message outlining the partnership goals."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the inquiry was created."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "contacted", "completed"],
+          "description": "The current status of the inquiry."
+        }
+      },
+      "required": ["name", "email", "organization", "message", "createdAt", "status"]
+    }
+  },
+  "firestore": {
+    "/consultationRequests/{requestId}": {
+      "schema": "consultationRequest",
+      "description": "Collection of consultation requests."
+    },
+    "/directInquiries/{inquiryId}": {
+      "schema": "directInquiry",
+      "description": "Collection of direct inquiries from the footer."
+    },
+    "/partnershipInquiries/{inquiryId}": {
+      "schema": "partnershipInquiry",
+      "description": "Collection of partnership inquiries from the partner page."
+    }
+  }
+}
